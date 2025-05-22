@@ -3,7 +3,7 @@ from yt_dlp import YoutubeDL
 
 app = Flask(__name__)
 
-@app.route('/api/v1/video/youtube/<video_id>', methods=["GET"])
+@app.route('/api/v1/video/<video_id>', methods=["GET"])
 def get_stream_url(video_id):
     # 対象となる動画 URL を作成
     video_url = f"https://www.youtube.com/watch?v={video_id}"
