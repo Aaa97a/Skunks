@@ -1,4 +1,2 @@
-jinja2
-requests
-fastapi
-uvicorn
+yt-dlp
+Flask 
